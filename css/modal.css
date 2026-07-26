@@ -1,0 +1,545 @@
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.modal.activo{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.modal-contenido{
+
+    width:90%;
+
+    max-width:500px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    position:relative;
+
+    transform:scale(.8);
+
+    transition:.3s;
+
+}
+
+.modal.activo .modal-contenido{
+
+    transform:scale(1);
+
+}
+
+.modal-contenido img{
+
+    width:100%;
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.modal-contenido h2{
+
+    margin-top:20px;
+
+}
+
+.modal-contenido p{
+
+    margin:15px 0;
+
+    color:#555;
+
+}
+
+.modal-contenido h3{
+
+    color:#ff5722;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+.cerrar{
+
+    position:absolute;
+
+    top:10px;
+
+    right:18px;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition:.2s;
+
+}
+
+.cerrar:hover{
+
+    color:red;
+
+    transform:rotate(90deg);
+
+}
+
+/*================ CANTIDAD ================*/
+
+.cantidad{
+
+    margin-top:25px;
+
+}
+
+.cantidad label{
+
+    display:block;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#333;
+
+    margin-bottom:15px;
+
+}
+
+.cantidad-controles{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:20px;
+
+}
+
+.cantidad-controles button{
+
+    width:42px;
+
+    height:42px;
+
+    margin:0;
+
+    padding:0;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+
+    transition:.25s;
+
+}
+
+.cantidad-controles button:hover{
+
+    transform:scale(1.08);
+
+}
+
+.cantidad-controles button:active{
+
+    transform:scale(.95);
+
+}
+
+#cantidadActual{
+
+    min-width:60px;
+
+    text-align:center;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    color:#222;
+
+}
+
+#sliderCantidad{
+
+    width:100%;
+
+    height:8px;
+
+    margin-bottom:25px;
+
+    appearance:none;
+
+    border-radius:20px;
+
+    outline:none;
+
+    background:#ddd;
+
+    cursor:pointer;
+
+    transition:background .15s;
+
+}
+
+#sliderCantidad::-webkit-slider-thumb{
+
+    appearance:none;
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    background:white;
+
+    border:4px solid #ff5722;
+
+    cursor:pointer;
+
+    box-shadow:0 0 10px rgba(0,0,0,.25);
+
+    transition:.2s;
+
+}
+
+#sliderCantidad::-webkit-slider-thumb:hover{
+
+    transform:scale(1.15);
+
+}
+
+#sliderCantidad::-moz-range-thumb{
+
+    width:24px;
+
+    height:24px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:0 0 10px rgba(0,0,0,.25);
+
+    cursor:pointer;
+
+}
+
+#subtotalProducto{
+
+    font-size:30px;
+
+    color:#ff5722;
+
+    margin-bottom:25px;
+
+}
+
+#btnComprar{
+
+    width:100%;
+
+    margin:0;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+#btnComprar:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(255,87,34,.3);
+
+}
+
+/*=========== FORMULARIO CLIENTE ===========*/
+
+
+.datos-cliente input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin:10px 0;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+
+.datos-cliente input:focus{
+
+    border-color:#ff9800;
+
+}
+
+
+.datos-cliente button{
+
+    width:100%;
+
+    margin-top:15px;
+
+}
+
+/* Modal datos cliente encima del carrito */
+
+#modalCliente{
+
+    z-index:2000;
+
+}
+
+/*=========== CAMPOS FLOTANTES ===========*/
+
+
+.campo-flotante{
+
+    position:relative;
+
+    width:100%;
+
+    margin:20px 0;
+
+}
+
+
+.campo-flotante input{
+
+    width:100%;
+
+    padding:16px 12px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    background:white;
+
+    transition:.3s;
+
+}
+
+
+.campo-flotante label{
+
+    position:absolute;
+
+    left:12px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#777;
+
+    background:white;
+
+    padding:0 5px;
+
+    pointer-events:none;
+
+    transition:.25s;
+
+}
+
+
+.campo-flotante input:focus{
+
+    border-color:#ff9800;
+
+}
+
+
+/* cuando tiene texto o está seleccionado */
+
+.campo-flotante input:focus + label,
+.campo-flotante input:valid + label{
+
+    top:0;
+
+    font-size:13px;
+
+    color:#ff9800;
+
+}
+
+/*=========== BOTON CONTINUAR WHATSAPP ===========*/
+
+
+#continuarWhatsapp{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#25D366,#128C7E);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    letter-spacing:.5px;
+
+    box-shadow:0 8px 20px rgba(37,211,102,.3);
+
+    transition:.3s;
+
+}
+
+
+#continuarWhatsapp:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(37,211,102,.45);
+
+}
+
+
+#continuarWhatsapp:active{
+
+    transform:scale(.97);
+
+}
+
+/*=========== CONFIRMACION PEDIDO ===========*/
+
+
+#modalConfirmacion{
+
+    z-index:3000;
+
+}
+
+
+.confirmacion h2{
+
+    color:#25D366;
+
+    margin-bottom:20px;
+
+}
+
+
+.confirmacion p{
+
+    color:#555;
+
+    line-height:1.5;
+
+}
+
+
+.confirmacion button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    background:linear-gradient(135deg,#25D366,#128C7E);
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+}
