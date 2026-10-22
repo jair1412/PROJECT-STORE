@@ -5,7 +5,7 @@ const productos = [
         nombre: "Delineador de ojos",
         descripcion:".",
         precio: 1.50,
-        imagen: "img/producto1.PNG"
+        imagen: "img/producto1.png"
     },
 
     {
@@ -13,7 +13,7 @@ const productos = [
         nombre: "Parches para acne",
         descripcion:"",
         precio: 1.50,
-        imagen: "img/producto2.PNG"
+        imagen: "img/producto2.png"
     },
 
     {
@@ -29,7 +29,7 @@ const productos = [
         nombre: "Perfume de mujer | Passion Girl",
         descripcion:"",
         precio: 10.00,
-        imagen: "img/producto4.PNG"
+        imagen: "img/producto4.png"
     },
 
     {
@@ -37,7 +37,7 @@ const productos = [
         nombre: "Perfume de mujer | Steel Troop",
         descripcion:"",
         precio: 10.00,
-        imagen: "img/producto5.PNG"
+        imagen: "img/producto5.png"
     },
 
     {
@@ -45,7 +45,7 @@ const productos = [
         nombre: "Perfume de mujer | Yara lovs",
         descripcion:"",
         precio: 10.00,
-        imagen: "img/producto6.PNG"
+        imagen: "img/producto6.png"
     },
 
     {
@@ -53,7 +53,7 @@ const productos = [
         nombre: "Vinchas de lazo",
         descripcion:"$1.50 c/u",
         precio: 1.50,
-        imagen: "img/producto7.PNG"
+        imagen: "img/producto7.png"
     },
 
     {
@@ -61,7 +61,7 @@ const productos = [
         nombre: "Perfume kitty",
         descripcion:"",
         precio: 5.00,
-        imagen: "img/producto8.PNG"
+        imagen: "img/producto8.png"
     },
 
     {
@@ -69,7 +69,7 @@ const productos = [
         nombre: "Accesorios para el cabello",
         descripcion:"",
         precio: 1.00,
-        imagen: "img/producto9.PNG"
+        imagen: "img/producto9.png"
     },
 
     {
@@ -77,7 +77,7 @@ const productos = [
         nombre: "Argollas de acero inoxidable",
         descripcion:"$1 el par",
         precio: 1.00,
-        imagen: "img/producto10.PNG"
+        imagen: "img/producto10.png"
     },
 
      {
@@ -85,7 +85,7 @@ const productos = [
         nombre: "Lazo rosado",
         descripcion:"$1 el par",
         precio: 1.00,
-        imagen: "img/producto11.PNG"
+        imagen: "img/producto11.png"
     }, 
 
          {
@@ -93,7 +93,7 @@ const productos = [
         nombre: "Hebillas rosadas con aplique de flor",
         descripcion:"$0.75 el par",
         precio: 0.75,
-        imagen: "img/producto12.PNG"
+        imagen: "img/producto12.png"
     },
 
        {
@@ -101,7 +101,7 @@ const productos = [
         nombre: "Lazo rosado",
         descripcion:"$1 el par",
         precio: 1.00,
-        imagen: "img/producto13.PNG"
+        imagen: "img/producto13.png"
     },
 
        {
@@ -109,7 +109,7 @@ const productos = [
         nombre: "Piojitos, varios colores",
         descripcion:"$0.50 la fundita",
         precio: 0.50,
-        imagen: "img/producto14.PNG"
+        imagen: "img/producto14.png"
     },
 
            {
@@ -117,7 +117,7 @@ const productos = [
         nombre: "Billetera de Kitty + moños + vinchas + piojitos",
         descripcion:" ",
         precio: 2.00,
-        imagen: "img/producto15.PNG"
+        imagen: "img/producto15.png"
     },
 
     {
@@ -125,7 +125,7 @@ const productos = [
         nombre: "",
         descripcion:"$0.50 c/u",
         precio: 0.50,
-        imagen: "img/producto16.PNG"
+        imagen: "img/producto16.png"
     },
 
         {
@@ -133,7 +133,7 @@ const productos = [
         nombre: "Cintillo fino",
         descripcion:"$0.50 c/u",
         precio: 0.50,
-        imagen: "img/producto17.PNG"
+        imagen: "img/producto17.png"
     },
 
         {
@@ -141,7 +141,7 @@ const productos = [
         nombre: "Moño de dibujo animado",
         descripcion:"$0.50 el par",
         precio: 0.50,
-        imagen: "img/producto18.PNG"
+        imagen: "img/producto18.png"
     },
 
         {
@@ -149,7 +149,7 @@ const productos = [
         nombre: "vincha amarilla",
         descripcion:"$0.50 c/u",
         precio: 0.50,
-        imagen: "img/producto19.PNG"
+        imagen: "img/producto19.png"
     },
 
         {
@@ -157,6 +157,6 @@ const productos = [
         nombre: "Shampoo de cebolla",
         descripcion:"",
         precio: 6.00,
-        imagen: "img/producto20.PNG"
+        imagen: "img/producto20.png"
     },
 ];
