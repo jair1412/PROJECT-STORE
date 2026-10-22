@@ -1,1 +1,0 @@
-mostrarProductos(productos);
